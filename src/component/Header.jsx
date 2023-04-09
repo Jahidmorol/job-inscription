@@ -1,23 +1,17 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import {
-    BoltIcon,
-    Bars3BottomRightIcon,
-    Bars3Icon,
-    XMarkIcon,
-  } from "@heroicons/react/24/solid";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 
 const Header = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <div className="bg-gray-100 px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
       <div className="relative flex items-center justify-between">
         {/* Logo Section */}
-        <Link to="/" className="inline-flex items-center">
-          <BoltIcon className="h-6 w-6 text-blue-500" />
-          <span className="ml-2 text-xl font-bold tracking-wide text-gray-800">
-            nextPage
-          </span>
+        <Link to="/">
+          <h1 className="mb-3 text-xl lg:text-2xl font-bold  text-gray-800">
+            Job <span className="text-purple-400">Inscription</span>
+          </h1>
         </Link>
 
         {/* Nav Items Section */}
@@ -63,11 +57,10 @@ const Header = () => {
                 {/* Logo & Button section */}
                 <div className="flex items-center justify-between mb-4">
                   <div>
-                    <Link to="/" className="inline-flex items-center">
-                      <BoltIcon className="h-6 w-6 text-blue-500" />
-                      <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                        nextPage
-                      </span>
+                    <Link to="/">
+                      <h1 className="mb-3 text-xl lg:text-2xl font-bold  text-gray-800">
+                        Job <span className="text-purple-400">Inscription</span>
+                      </h1>
                     </Link>
                   </div>
                   {/* Dropdown menu close button */}
@@ -94,7 +87,7 @@ const Header = () => {
                     </li>
                     <li>
                       <Link
-                        to="/books"
+                        to="/applied"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
                       >
                         Applied Jobs
@@ -102,7 +95,7 @@ const Header = () => {
                     </li>
                     <li>
                       <Link
-                        to="/about"
+                        to="/blog"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
                       >
                         Blog
