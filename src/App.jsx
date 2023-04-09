@@ -1,10 +1,15 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
 import './App.css'
+import Footer from './component/Footer';
+import Header from './component/Header';
 
 const App = () => {
   return (
     <div>
-      <p>its app component</p>
+      <Header></Header>
+      <Outlet></Outlet>
+      <Footer></Footer>
     </div>
   );
 };
