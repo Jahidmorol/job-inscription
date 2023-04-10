@@ -1,10 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useLoaderData } from "react-router-dom";
 import FeaturedJobs from "./FeaturedJobs";
 import HomeCover from "./HomeCover";
 import JobCatagory from "./JobCatagory";
 
 const Home = () => {
+    // const jobs = useLoaderData()
+    // console.log(jobs);
   return (
     <div>
       <div className="bg-gray-100">
