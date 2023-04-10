@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLoaderData } from "react-router-dom";
 import {
-  BeakerIcon,
   PhoneIcon,
   CalendarIcon,
   MapPinIcon,
   CurrencyDollarIcon,
 } from "@heroicons/react/24/solid";
+import { addToDb } from "../utilitis/fakeDb";
 
 const JobDetails = () => {
   const data = useLoaderData();
-  console.log(data);
+//   console.log(data);
   //   const getId = useParams();
   //   console.log(getId);
   //   const [data, setData] = useState([]);
@@ -31,7 +31,11 @@ const JobDetails = () => {
     phone,
     email,
     jobLocation,
+    id
   } = data;
+  const handleAppliedjobs = (id) =>{
+    addToDb(id)
+  }
   return (
     <div className="my-container text-gray-800">
         <h1 className="text-3xl text-center mb-5 font-bold">Job Details</h1>
@@ -91,7 +95,7 @@ const JobDetails = () => {
               </p>
             </div>
           </div>
-          <button className="btn mt-5 w-full">
+          <button onClick={()=> handleAppliedjobs(id)} className="btn mt-5 w-full">
             <Link className="px-28 md:px-24" to="/">
               Apply Now
             </Link>

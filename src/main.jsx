@@ -6,6 +6,7 @@ import Applied from "./component/Applied";
 import Blog from "./component/Blog";
 import Home from "./component/Home";
 import JobDetails from "./component/JobDetails";
+import Statistics from "./component/Statistics";
 import "./index.css";
 
 const router = createBrowserRouter([
@@ -23,8 +24,13 @@ const router = createBrowserRouter([
         element: <Blog></Blog>,
       },
       {
+        path: "/statistics",
+        element:<Statistics></Statistics>
+      },
+      {
         path: "/applied",
         element: <Applied></Applied>,
+        loader: async () => await fetch("/featured.json"),
       },
       {
         path: "job/:id",
