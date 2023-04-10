@@ -7,7 +7,7 @@
   }
   
   .btn{
-    @apply inline-flex items-center h-12 px-6 mb-3 font-medium text-white transition duration-200 rounded shadow-md  bg-gradient-to-r from-blue-300 to-purple-500 hover:from-purple-500 hover:to-blue-300 
+    @apply inline-flex items-center h-12 px-6 mb-3 font-medium text-white transition duration-200 rounded shadow-md border-none bg-gradient-to-r from-blue-300 to-purple-500 hover:from-purple-500 hover:to-blue-300 
   }
   
   .badge{

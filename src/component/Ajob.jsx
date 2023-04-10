@@ -16,7 +16,7 @@ const Ajob = ({ job }) => {
   return (
     <div className="md:flex justify-between items-center border rounded-lg my-6 p-5">
       <div className=" md:flex gap-5 items-center">
-        <div className=" bg-slate-200 h-44 w-40 flex items-center rounded-lg">
+        <div className=" bg-slate-200 h-40 w-40 flex items-center rounded-lg">
           <img className="w-28 mx-auto text-center" src={img} alt="" />
         </div>
         <div className="">
@@ -30,7 +30,7 @@ const Ajob = ({ job }) => {
               {fullOrHalfTime}
             </p>
           </div>
-          <div className="flex py-4   gap-12">
+          <div className="flex py-4   gap-7">
             <p className="inline-flex">
               <MapPinIcon className="h-6 w-6 text-gray-400" />
               {jobLocation}

@@ -37,7 +37,7 @@ const JobDetails = () => {
     addToDb(id)
   }
   return (
-    <div className="my-container text-gray-800">
+    <div className="my-container text-gray-700">
         <h1 className="text-3xl text-center mb-5 font-bold">Job Details</h1>
       <div className="md:flex items-center justify-between">
         <div className="md:w-2/4">
