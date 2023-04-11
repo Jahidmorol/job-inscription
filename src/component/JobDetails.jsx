@@ -10,7 +10,7 @@ import { addToDb } from "../utilitis/fakeDb";
 
 const JobDetails = () => {
   const data = useLoaderData();
-//   console.log(data);
+  //   console.log(data);
   //   const getId = useParams();
   //   console.log(getId);
   //   const [data, setData] = useState([]);
@@ -31,14 +31,14 @@ const JobDetails = () => {
     phone,
     email,
     jobLocation,
-    id
+    id,
   } = data;
-  const handleAppliedjobs = (id) =>{
-    addToDb(id)
-  }
+  const handleAppliedjobs = (id) => {
+    addToDb(id);
+  };
   return (
     <div className="my-container text-gray-700">
-        <h1 className="text-3xl text-center mb-5 font-bold">Job Details</h1>
+      <h1 className="text-3xl text-center mb-5 font-bold">Job Details</h1>
       <div className="md:flex items-center justify-between">
         <div className="md:w-2/4">
           <p className="text-gray-800 my-6">
@@ -95,11 +95,12 @@ const JobDetails = () => {
               </p>
             </div>
           </div>
-          <button onClick={()=> handleAppliedjobs(id)} className="btn mt-5 w-full">
-            <Link className="px-28 md:px-24" to="/applied">
-              Apply Now
-            </Link>
-          </button>
+          <Link className="" to="/applied">
+            <button
+              onClick={() => handleAppliedjobs(id)}
+              className="btn mt-5 w-full"
+            > Apply Now </button>
+          </Link>
         </div>
       </div>
     </div>

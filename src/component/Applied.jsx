@@ -6,7 +6,8 @@ import Ajob from "./Ajob";
 
 const Applied = () => {
   const aData = useLoaderData();
-  const [aJobs, setAjobs] = useState(aData)
+  const [aJobs, setAjobs] = useState([])
+  const [bJobs, setBjobs] = useState([])
  
   useEffect(() => {
     const storedJobs = getShoppingCart();
@@ -18,6 +19,7 @@ const Applied = () => {
         savedJobs.push(addedJobs);
       }
       setAjobs(savedJobs)
+      setBjobs(savedJobs)
     }
   }, [aData]);
 
@@ -25,11 +27,11 @@ const Applied = () => {
     
   },[])
   const handleRemote = () => {
-    const remote = aData.filter(aJob => aJob.remoteOrOnsite == 'Remote')
+    const remote = bJobs.filter(aJob => aJob.remoteOrOnsite == 'Remote')
     setAjobs(remote)
   }
   const handleOnsite = () => {
-    const onsite = aData.filter(aJob => aJob.remoteOrOnsite == 'Onsite')
+    const onsite = bJobs.filter(aJob => aJob.remoteOrOnsite == 'Onsite')
     setAjobs(onsite)
   }
 

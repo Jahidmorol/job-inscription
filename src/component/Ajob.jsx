@@ -44,7 +44,7 @@ const Ajob = ({ job }) => {
       </div>
       <div className="">
         <Link to={`/job/${id}`}>
-          <p className="btn">View Details</p>
+          <button className="btn">View Details</button>
         </Link>
       </div>
     </div>
