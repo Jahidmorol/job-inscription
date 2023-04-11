@@ -1,45 +1,36 @@
-
-import {
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend,
-  ResponsiveContainer,
-} from "recharts";
+import { PieChart, Pie, Tooltip, Legend, ResponsiveContainer, Cell } from 'recharts';
 
 const assignments = [
-  { name: "assignment-1", id: 1, mark: 25 },
-  { name: "assignment-2", id: 2, mark: 35 },
-  { name: "assignment-3", id: 3, mark: 55 },
-  { name: "assignment-4", id: 4, mark: 40 },
-  { name: "assignment-5", id: 5, mark: 60 },
-  { name: "assignment-6", id: 6, mark: 50 },
-  { name: "assignment-7", id: 7, mark: 55 },
+  { name: "a-1", id: 1, mark: 60 },
+  { name: "a-2", id: 2, mark: 60 },
+  { name: "a-3", id: 3, mark: 60 },
+  { name: "a-4", id: 4, mark: 60 },
+  { name: "a-5", id: 5, mark: 60 },
+  { name: "a-6", id: 6, mark: 60 },
+  { name: "a-7", id: 7, mark: 60 },
 ];
 
-const CompostChart = () => (
-  <ResponsiveContainer
-    width="100%"
-    height={400}
-    margin={{
-      top: 20,
-      right: 20,
-      bottom: 20,
-      left: 20,
-    }}
-  >
-    <BarChart data={assignments}>
-      <CartesianGrid strokeDasharray="3 3" />
-      <XAxis dataKey="name" />
-      <YAxis />
-      <Tooltip />
-      <Legend />
-      <Bar dataKey="mark" fill="#ca97ca" />
-    </BarChart>
-  </ResponsiveContainer>
-);
+const PieCompostChart = () => {
+  const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#8884d8'];
 
-export default CompostChart;
+  return (
+    <ResponsiveContainer width="100%" height={400}>
+      <PieChart>
+        <Pie
+          dataKey="mark"
+          data={assignments}
+          fill="#8884d8"
+          label
+        >
+          {assignments.map((entry, index) => (
+            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+          ))}
+        </Pie>
+        <Tooltip />
+        <Legend />
+      </PieChart>
+    </ResponsiveContainer>
+  );
+};
+
+export default PieCompostChart;

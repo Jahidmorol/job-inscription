@@ -6,9 +6,8 @@ import Ajob from "./Ajob";
 
 const Applied = () => {
   const aData = useLoaderData();
-  //   const [jobs, setJobs] = useState([]);
-  const [aJobs, setAjobs] = useState([]);
-
+  const [aJobs, setAjobs] = useState(aData)
+ 
   useEffect(() => {
     const storedJobs = getShoppingCart();
     let savedJobs = [];
@@ -18,10 +17,23 @@ const Applied = () => {
       if (addedJobs) {
         savedJobs.push(addedJobs);
       }
-      setAjobs(savedJobs);
+      setAjobs(savedJobs)
     }
   }, [aData]);
-  //   console.log(aJobs);
+
+  useEffect(()=>{
+    
+  },[])
+  const handleRemote = () => {
+    const remote = aData.filter(aJob => aJob.remoteOrOnsite == 'Remote')
+    setAjobs(remote)
+  }
+  const handleOnsite = () => {
+    const onsite = aData.filter(aJob => aJob.remoteOrOnsite == 'Onsite')
+    setAjobs(onsite)
+  }
+
+
   return (
     <div className="my-container">
       <h1 className="text-3xl text-center text-gray-700 font-bold">Applied Jobs </h1>
@@ -39,10 +51,10 @@ const Applied = () => {
             className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <a>Item 1</a>
+              <a onClick={handleRemote}>See Remote jobs</a>
             </li>
             <li>
-              <a>Item 2</a>
+              <a onClick={handleOnsite}>See Onsite jobs</a>
             </li>
           </ul>
         </div>

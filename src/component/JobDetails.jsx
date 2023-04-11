@@ -96,7 +96,7 @@ const JobDetails = () => {
             </div>
           </div>
           <button onClick={()=> handleAppliedjobs(id)} className="btn mt-5 w-full">
-            <Link className="px-28 md:px-24" to="/">
+            <Link className="px-28 md:px-24" to="/applied">
               Apply Now
             </Link>
           </button>

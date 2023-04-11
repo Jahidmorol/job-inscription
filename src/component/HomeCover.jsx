@@ -24,7 +24,7 @@ const HomeCover = () => {
         </div>
       </div>
       <div className="md:w-2/3 lg:w-1/2">
-        <img src="/public/assets/All Images/P3OLGJ1 copy 1.png" alt="" />
+        <img src="/assets/All Images/P3OLGJ1 copy 1.png" alt="" />
       </div>
     </div>
   );
