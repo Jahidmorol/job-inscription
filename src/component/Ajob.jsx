@@ -25,10 +25,10 @@ const Ajob = ({ job }) => {
           </h1>
           <h2>{company}</h2>
           <div className="flex pt-4 gap-6">
-            <p className="py-1.5 px-4 border rounded-sm  font-semibold  border-blue-400 text-blue-500 ">
+            <p className="py-1.5 px-4 border rounded-sm  font-semibold  border-blue-400 text-green-500 ">
               {remoteOrOnsite}
             </p>
-            <p className="py-1.5 px-4 border rounded-sm font-semibold  border-blue-400 text-blue-500 ">
+            <p className="py-1.5 px-4 border rounded-sm font-semibold  border-blue-400 text-green-500 ">
               {fullOrHalfTime}
             </p>
           </div>
@@ -39,7 +39,7 @@ const Ajob = ({ job }) => {
             </p>
             <p className="inline-flex ">
               <CurrencyDollarIcon className="h-6 w-6 text-gray-400" />
-              {salary}
+              <span>Salary : {salary}</span>
             </p>
           </div>
         </div>

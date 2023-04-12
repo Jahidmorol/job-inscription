@@ -19,10 +19,10 @@ const Fjob = ({ fJob }) => {
       <h1 className="font-bold text-3xl pt-4 text-gray-600">{jobTitle}</h1>
       <p className="font-semibold pt-1 text-xl text-gray-500">{company}</p>
       <div className="flex pt-4 gap-6">
-        <p className="py-1.5 px-4 border rounded-sm text-xl font-semibold  border-blue-400 text-purple-300 ">
+        <p className="py-1.5 px-4 border rounded-sm text-xl font-semibold  border-blue-400 text-green-300 ">
           {remoteOrOnsite}
         </p>
-        <p className="py-1.5 px-4 border rounded-sm text-xl font-semibold  border-blue-400 text-purple-300 ">
+        <p className="py-1.5 px-4 border rounded-sm text-xl font-semibold  border-blue-400 text-green-300 ">
           {fullOrHalfTime}
         </p>
       </div>
@@ -33,7 +33,7 @@ const Fjob = ({ fJob }) => {
         </p>
         <p className="inline-flex ">
           <CurrencyDollarIcon className="h-6 w-6 text-gray-400" />
-          {salary}
+          <span>Salary : {salary}</span>
         </p>
       </div>
       <Link to={`/job/${id}`}>

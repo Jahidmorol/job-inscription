@@ -63,13 +63,13 @@ const JobDetails = () => {
             <h4 className="text-lg font-semibold">Job Details</h4>
             <hr className="my-3" />
             <div className="flex items-center mb-3">
-              <CurrencyDollarIcon className="h-6 w-6 mr-2 text-purple-300" />
+              <CurrencyDollarIcon className="h-6 w-6 mr-2 text-green-300" />
               <p>
                 <span className="font-semibold">Salary</span>: {salary}
               </p>
             </div>
             <div className="flex items-center mb-3">
-              <CalendarIcon className="h-6 w-6 mr-2 text-purple-300" />
+              <CalendarIcon className="h-6 w-6 mr-2 text-green-300" />
               <p>
                 <span className="font-semibold">Job Title</span>: {jobTitle}
               </p>
@@ -77,19 +77,19 @@ const JobDetails = () => {
             <h4 className="text-lg font-semibold">Contact Information</h4>
             <hr className="my-3" />
             <div className="flex items-center mb-3">
-              <PhoneIcon className="h-6 w-6 mr-2 text-purple-300" />
+              <PhoneIcon className="h-6 w-6 mr-2 text-green-300" />
               <p>
                 <span className="font-semibold">Phone</span>: {phone}
               </p>
             </div>
             <div className="flex items-center mb-3">
-              <CalendarIcon className="h-6 w-6 mr-2 text-purple-300" />
+              <CalendarIcon className="h-6 w-6 mr-2 text-green-300" />
               <p>
                 <span className="font-semibold">Email</span>: {email}
               </p>
             </div>
             <div className="flex items-center mb-3">
-              <MapPinIcon className="h-6 w-6 mr-2 text-purple-300" />
+              <MapPinIcon className="h-6 w-6 mr-2 text-green-300" />
               <p>
                 <span className="font-semibold">Address</span>: {jobLocation}
               </p>
