@@ -10,7 +10,7 @@ const Header = () => {
         <div className="relative flex items-center justify-between">
           <Link to="/">
             <h1 className="mb-3 text-xl lg:text-2xl font-bold  text-gray-800">
-              Job <span className="text-green-300">Inscription</span>
+              Job <span className="text-green-400">Inscription</span>
             </h1>
           </Link>
 
@@ -67,7 +67,7 @@ const Header = () => {
                     <div>
                       <Link to="/">
                         <h1 className="mb-3 text-xl lg:text-2xl font-bold  text-gray-800">
-                          Job <span className="text-green-300">Inscription</span>
+                          Job <span className="text-green-400">Inscription</span>
                         </h1>
                       </Link>
                     </div>
@@ -88,7 +88,7 @@ const Header = () => {
                       <li>
                         <Link
                           to="/"
-                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
+                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-400"
                         >
                           Home
                         </Link>
@@ -96,7 +96,7 @@ const Header = () => {
                       <li>
                         <Link
                           to="/statistics"
-                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
+                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-400"
                         >
                           Statistics
                         </Link>
@@ -104,7 +104,7 @@ const Header = () => {
                       <li>
                         <Link
                           to="/applied"
-                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
+                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-400"
                         >
                           Applied Jobs
                         </Link>
@@ -112,7 +112,7 @@ const Header = () => {
                       <li>
                         <Link
                           to="/blog"
-                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
+                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-400"
                         >
                           Blog
                         </Link>

@@ -33,7 +33,7 @@ const FeaturedJobs = () => {
       </div>
       <div className="text-center mt-5">
         <button onClick={seeMoreBtn} className={hide ? "btn" : "hidden"}>
-          See More
+          See All Jobs
         </button>
       </div>
     </div>
