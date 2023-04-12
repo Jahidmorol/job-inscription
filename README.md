@@ -11,7 +11,7 @@
 
 ## Live Link
 
-- Hosted in Netlify -> [JOB INCRIPTION]()
+- Hosted in Netlify -> [JOB INCRIPTION](https://incomparable-sprinkles-046ef2.netlify.app/)
 
 ## Installation
 
