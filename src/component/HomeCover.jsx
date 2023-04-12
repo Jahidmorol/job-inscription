@@ -9,7 +9,7 @@ const HomeCover = () => {
           <h2 className="max-w-lg mb-6 font-sans font-semibold tracking-tight text-gray-900 text-4xl sm:text-5xl sm:leading-none md:text-6xl md:leading-none">
             One Step
             <br className="block sm:hidden md:block" /> Closer To Your <br />
-            <span className="inline-block  text-purple-400">Dream Job</span>
+            <span className="inline-block  text-green-300">Dream Job</span>
           </h2>
           <p className="text-gray-700 text-sm lg:max-w-sm">
             Explore thousands of job opportunities with all the information you
@@ -23,8 +23,8 @@ const HomeCover = () => {
           </Link>
         </div>
       </div>
-      <div className="md:w-2/3 lg:w-1/2">
-        <img src="/assets/All Images/P3OLGJ1 copy 1.png" alt="" />
+      <div className="md:w-2/3 lg:w-2/5">
+        <img src="/assets/All Images/find-job.png" alt="" />
       </div>
     </div>
   );

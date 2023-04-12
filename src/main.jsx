@@ -43,7 +43,6 @@ const router = createBrowserRouter([
           const singleJob = newJob.find((jb) => jb.id == params.id);
           return singleJob;
         },
-        // loader: () => fetch('featured.json')
       },
     ],
   },

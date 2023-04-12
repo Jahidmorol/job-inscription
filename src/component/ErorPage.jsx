@@ -2,18 +2,18 @@ import React from "react";
 import { Link, useRouteError } from "react-router-dom";
 import { ExclamationCircleIcon,FaceFrownIcon } from "@heroicons/react/24/solid";
 const ErorPage = () => {
-    const { error, status } = useRouteError();
+    const { error} = useRouteError();
   return (
     <div>
       <div className="bg-black h-screen w-screen flex justify-center items-center">
         <div>
           <p className="flex justify-center">
-            <FaceFrownIcon className="h-40 w-40 text-purple-400" />
+            <FaceFrownIcon className="h-40 w-40 text-gray-300" />
           </p>
-          <p className="text-3xl text-center font-semibold text-red-700">
+          <p className="text-3xl text-center font-semibold text-red-500">
             oppes!!
           </p>
-          <h1 className="text-white text-3xl my-5 font-bold uppercase">
+          <h1 className="text-gray-300 text-3xl my-5 font-bold uppercase">
             {error.message}
           </h1>
           <Link className="flex justify-center" to="/">

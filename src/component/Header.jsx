@@ -10,7 +10,7 @@ const Header = () => {
         <div className="relative flex items-center justify-between">
           <Link to="/">
             <h1 className="mb-3 text-xl lg:text-2xl font-bold  text-gray-800">
-              Job <span className="text-purple-400">Inscription</span>
+              Job <span className="text-green-300">Inscription</span>
             </h1>
           </Link>
 
@@ -67,7 +67,7 @@ const Header = () => {
                     <div>
                       <Link to="/">
                         <h1 className="mb-3 text-xl lg:text-2xl font-bold  text-gray-800">
-                          Job <span className="text-purple-400">Inscription</span>
+                          Job <span className="text-green-300">Inscription</span>
                         </h1>
                       </Link>
                     </div>

@@ -5,8 +5,6 @@ import HomeCover from "./HomeCover";
 import JobCatagory from "./JobCatagory";
 
 const Home = () => {
-    // const jobs = useLoaderData()
-    // console.log(jobs);
   return (
     <div>
       <div className="bg-gray-100">
