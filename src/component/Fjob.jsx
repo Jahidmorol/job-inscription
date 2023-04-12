@@ -33,7 +33,7 @@ const Fjob = ({ fJob }) => {
         </p>
         <p className="inline-flex ">
           <CurrencyDollarIcon className="h-6 w-6 text-gray-400" />
-          <span>Salary : {salary}</span>
+          <span>Salary: {salary}</span>
         </p>
       </div>
       <Link to={`/job/${id}`}>
