@@ -20,7 +20,9 @@ const Ajob = ({ job }) => {
           <img className="w-28 mx-auto text-center" src={img} alt="" />
         </div>
         <div className="">
-          <h1 className="font-semibold py-3 text-2xl text-gray-700">{jobTitle}</h1>
+          <h1 className="font-semibold py-3 text-2xl text-gray-700">
+            {jobTitle}
+          </h1>
           <h2>{company}</h2>
           <div className="flex pt-4 gap-6">
             <p className="py-1.5 px-4 border rounded-sm  font-semibold  border-blue-400 text-blue-500 ">
@@ -42,11 +44,10 @@ const Ajob = ({ job }) => {
           </div>
         </div>
       </div>
-      <div className="">
-        <Link to={`/job/${id}`}>
-          <button className="btn">View Details</button>
-        </Link>
-      </div>
+
+      <Link to={`/job/${id}`}>
+        <button className="btn">View Details</button>
+      </Link>
     </div>
   );
 };
